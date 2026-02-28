@@ -1,0 +1,108 @@
+[2026-02-28 09:09:01.560] [INFO] [Initialization] Discovering and initializing plugins...
+[2026-02-28 09:09:01.567] [INFO] [PluginManager] Registered plugin: ai-monitor v1.0.0
+[2026-02-28 09:09:01.579] [INFO] [PluginManager] Registered plugin: api-potluck v1.0.1
+[2026-02-28 09:09:01.583] [INFO] [PluginManager] Registered plugin: default-auth v1.0.0
+[2026-02-28 09:09:01.585] [INFO] [PluginManager] Found plugin for default config: ai-monitor
+[2026-02-28 09:09:01.586] [INFO] [PluginManager] Found plugin for default config: api-potluck
+[2026-02-28 09:09:01.586] [INFO] [PluginManager] Found plugin for default config: default-auth
+[2026-02-28 09:09:01.594] [INFO] [PluginManager] Plugin "ai-monitor" is disabled, skipping init
+[2026-02-28 09:09:01.594] [INFO] [PluginManager] Plugin "api-potluck" is disabled, skipping init
+[2026-02-28 09:09:01.596] [INFO] [Plugins] Loaded 3 plugin(s):
+[2026-02-28 09:09:01.597] [INFO]   ✗ ai-monitor v1.0.0 - AI 接口监控插件 - 捕获请求和响应参数（全链路协议转换监控，流式聚合输出，用于调试和分析）
+[2026-02-28 09:09:01.598] [INFO]   ✗ api-potluck v1.0.1 - API 大锅饭 - Key 管理和用量统计插件<br>管理端：<a href="potluck.html" target="_blank">potluck.html</a><br>用户端：<a href="potluck-user.html" target="_blank">potluck-user.html</a>
+[2026-02-28 09:09:01.599] [INFO]   ✓ default-auth v1.0.0 - 默认 API Key 认证插件
+[2026-02-28 09:09:01.601] [INFO] [ProviderPoolManager] Initialized provider statuses: ok (maxErrorCount: 10)
+[2026-02-28 09:09:01.602] [INFO] [Initialization] ProviderPoolManager initialized with configured pools.
+[2026-02-28 09:09:01.603] [INFO] [ProviderPoolManager] Checking nodes for approaching expiration dates using provider adapters...
+[2026-02-28 09:09:01.603] [WARN] [ProviderPoolManager] Node 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9 (openai-qwen-oauth) is near expiration. Enqueuing refresh...
+[2026-02-28 09:09:01.604] [INFO] [ProviderPoolManager] Provider openai-qwen-oauth has only 1 healthy nodes. Bypassing buffer and enqueuing refresh for 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9 immediately.
+[2026-02-28 09:09:01.606] [INFO] [Adapter] getServiceAdapter, provider: openai-qwen-oauth, uuid: 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9
+[2026-02-28 09:09:01.607] [INFO] [Qwen] System proxy disabled
+[2026-02-28 09:09:01.608] [INFO] [Qwen] Initializing Qwen API Service...
+[2026-02-28 09:09:01.609] [WARN] [ProviderPoolManager] Node 1416c121-9279-4988-954d-db5afbff27c4 (gemini-cli-oauth) is near expiration. Enqueuing refresh...
+[2026-02-28 09:09:01.610] [INFO] [ProviderPoolManager] Provider gemini-cli-oauth has only 1 healthy nodes. Bypassing buffer and enqueuing refresh for 1416c121-9279-4988-954d-db5afbff27c4 immediately.
+[2026-02-28 09:09:01.610] [INFO] [Adapter] getServiceAdapter, provider: gemini-cli-oauth, uuid: 1416c121-9279-4988-954d-db5afbff27c4
+[2026-02-28 09:09:01.612] [INFO] [Gemini] Initializing Gemini API Service...
+[2026-02-28 09:09:01.613] [WARN] [ProviderPoolManager] Node 2c5de6eb-4581-4ebe-99da-ca131eaf2967 (gemini-antigravity) is near expiration. Enqueuing refresh...
+[2026-02-28 09:09:01.614] [INFO] [ProviderPoolManager] Provider gemini-antigravity has only 1 healthy nodes. Bypassing buffer and enqueuing refresh for 2c5de6eb-4581-4ebe-99da-ca131eaf2967 immediately.
+[2026-02-28 09:09:01.614] [INFO] [Initialization] Initializing 1 node(s) for provider 'openai-qwen-oauth'...
+[2026-02-28 09:09:01.616] [INFO] [Adapter] getServiceAdapter, provider: openai-qwen-oauth, uuid: 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9
+[2026-02-28 09:09:01.616] [INFO]   ✓ Initialized node: 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9
+[2026-02-28 09:09:01.617] [INFO] [Initialization] Skipping provider type 'gemini-cli-oauth' (not in DEFAULT_MODEL_PROVIDERS).
+[2026-02-28 09:09:01.617] [INFO] [Initialization] Skipping provider type 'gemini-antigravity' (not in DEFAULT_MODEL_PROVIDERS).
+[2026-02-28 09:09:01.617] [INFO] [Initialization] Provider pool initialization complete: 1 succeeded, 0 failed.
+[2026-02-28 09:09:01.629] [INFO] --- Unified API Server Configuration ---
+[2026-02-28 09:09:01.630] [INFO]   Primary Model Provider: openai-qwen-oauth
+[2026-02-28 09:09:01.631] [INFO]   System Prompt File: D:\DEV\demo\AIClient-2-API\configs\input_system_prompt.txt
+[2026-02-28 09:09:01.631] [INFO]   System Prompt Mode: append
+[2026-02-28 09:09:01.631] [INFO]   Host: 0.0.0.0
+[2026-02-28 09:09:01.632] [INFO]   Port: 3060
+[2026-02-28 09:09:01.632] [INFO]   Required API Key: 123123
+[2026-02-28 09:09:01.633] [INFO]   Prompt Logging: none
+[2026-02-28 09:09:01.633] [INFO] ------------------------------------------
+[2026-02-28 09:09:01.633] [INFO] 
+Unified API Server running on http://0.0.0.0:3060
+[2026-02-28 09:09:01.634] [INFO] Supports multiple API formats:
+[2026-02-28 09:09:01.634] [INFO]   • OpenAI-compatible: /v1/chat/completions, /v1/responses, /v1/models
+[2026-02-28 09:09:01.635] [INFO]   • Gemini-compatible: /v1beta/models, /v1beta/models/{model}:generateContent
+[2026-02-28 09:09:01.635] [INFO]   • Claude-compatible: /v1/messages
+[2026-02-28 09:09:01.636] [INFO]   • Health check: /health
+[2026-02-28 09:09:01.636] [INFO]   • UI Management Console: http://0.0.0.0:3060/
+[2026-02-28 09:09:01.637] [INFO] [Initialization] Performing initial health checks for provider pools...
+[2026-02-28 09:09:01.638] [INFO] [ProviderPoolManager] Performing health checks on all providers...
+[2026-02-28 09:09:01.640] [INFO] [ProviderPoolManager] Reset provider counters: 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9 for type openai-qwen-oauth
+[2026-02-28 09:09:01.642] [INFO] [ProviderPoolManager] Reset provider counters: 1416c121-9279-4988-954d-db5afbff27c4 for type gemini-cli-oauth
+[2026-02-28 09:09:01.643] [INFO] [ProviderPoolManager] Reset provider counters: 2c5de6eb-4581-4ebe-99da-ca131eaf2967 for type gemini-antigravity
+[2026-02-28 09:09:01.645] [INFO] [Qwen Auth] Credentials loaded successfully from file.
+[2026-02-28 09:09:01.647] [INFO] [Qwen] Initialization complete.
+[2026-02-28 09:09:01.648] [INFO] [Qwen] Checking expiry date | Expiry date: 1772178463559, Current time: 1772240941648, 20 minutes from now: 1772242141648, Is near expiry: true
+[2026-02-28 09:09:01.649] [INFO] [Qwen] Expiry date is near, refreshing token...
+[2026-02-28 09:09:01.650] [INFO] [Gemini Auth] Credentials loaded successfully from file.
+[2026-02-28 09:09:01.651] [INFO] [Gemini] Discovering Project ID...
+[2026-02-28 09:09:01.652] [INFO] [Gemini] Using fixed models: [gemini-2.5-flash, gemini-2.5-flash-lite, gemini-2.5-pro, gemini-2.5-pro-preview-06-05, gemini-2.5-flash-preview-09-2025, gemini-3-pro-preview, gemini-3-flash-preview, gemini-3.1-pro-preview]
+[2026-02-28 09:09:01.658] [INFO] [Qwen Auth] Credentials loaded successfully from file.
+[2026-02-28 09:09:02.653] [INFO] [ProviderPoolManager] configs/provider_pools.json updated successfully for types: openai-qwen-oauth, gemini-cli-oauth, gemini-antigravity
+[2026-02-28 09:09:02.880] [INFO] [Qwen Auth] Token refresh response: ok
+[2026-02-28 09:09:02.882] [INFO] [ProviderPoolManager] Reset refresh status and marked healthy for provider 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9 (openai-qwen-oauth)
+[2026-02-28 09:09:02.882] [INFO] [ProviderPoolManager] Token refresh successful for node 3dce07b9-7c6c-484f-849f-aa9c36ecc2a9 (Duration: 1274ms)
+[2026-02-28 09:09:02.883] [INFO] [Adapter] getServiceAdapter, provider: gemini-antigravity, uuid: 2c5de6eb-4581-4ebe-99da-ca131eaf2967
+[2026-02-28 09:09:02.885] [INFO] [Antigravity] Initializing Antigravity API Service...
+[2026-02-28 09:09:02.886] [INFO] [Antigravity Auth] Credentials loaded successfully from file.
+[2026-02-28 09:09:02.887] [INFO] [Antigravity] Discovering Project ID...
+[2026-02-28 09:09:03.482] [INFO] [Gemini] Initialization complete. Project ID: focused-dock-vln82
+[2026-02-28 09:09:03.483] [INFO] [Gemini] Checking expiry date | Expiry date: 1772244541387, Current time: 1772240943482, 20 minutes from now: 1772242143482, Is near expiry: false
+[2026-02-28 09:09:03.483] [INFO] [ProviderPoolManager] Token refresh successful for node 1416c121-9279-4988-954d-db5afbff27c4 (Duration: 1871ms)
+[2026-02-28 09:09:03.898] [INFO] [ProviderPoolManager] configs/provider_pools.json updated successfully for types: openai-qwen-oauth
+[2026-02-28 09:09:04.448] [INFO] [Antigravity] Discovered existing Project ID: focused-dock-vln82
+[2026-02-28 09:09:04.449] [INFO] [Antigravity] Fetching available models...
+[2026-02-28 09:09:04.675] [INFO] [UI] Opened login page in default browser
+[2026-02-28 09:09:05.193] [INFO] [Antigravity] Available models: [gemini-3.1-pro-preview, gemini-3-flash-preview, gemini-2.5-flash-preview, gemini-claude-opus-4-6-thinking, gemini-3-pro-preview]
+[2026-02-28 09:09:05.194] [INFO] [Antigravity] Initialization complete. Project ID: focused-dock-vln82
+[2026-02-28 09:09:05.195] [INFO] [Antigravity] Checking expiry date | Expiry date: 1772244542313, Current time: 1772240945195, 20 minutes from now: 1772242145195, Is near expiry: false
+[2026-02-28 09:09:05.195] [INFO] [ProviderPoolManager] Token refresh successful for node 2c5de6eb-4581-4ebe-99da-ca131eaf2967 (Duration: 2310ms)
+[2026-02-28 09:09:09.728] [Req:127.0.0.1:074a569e] [INFO] [Auth] Successfully read password file
+[2026-02-28 09:09:09.729] [Req:127.0.0.1:074a569e] [INFO] [Auth] Validating password, stored password length: 8 , input password length: 5
+[2026-02-28 09:09:09.730] [Req:127.0.0.1:074a569e] [INFO] [Auth] Password validation result: false
+[2026-02-28 09:09:12.893] [Req:127.0.0.1:25f23541] [INFO] [Auth] Successfully read password file
+[2026-02-28 09:09:12.894] [Req:127.0.0.1:25f23541] [INFO] [Auth] Validating password, stored password length: 8 , input password length: 5
+[2026-02-28 09:09:12.894] [Req:127.0.0.1:25f23541] [INFO] [Auth] Password validation result: false
+[2026-02-28 09:09:15.018] [Req:127.0.0.1:5713d28d] [INFO] [Auth] Successfully read password file
+[2026-02-28 09:09:15.019] [Req:127.0.0.1:5713d28d] [INFO] [Auth] Validating password, stored password length: 8 , input password length: 8
+[2026-02-28 09:09:15.019] [Req:127.0.0.1:5713d28d] [INFO] [Auth] Password validation result: true
+[2026-02-28 09:09:15.889] [Req:127.0.0.1:6094b047] [INFO] [Usage API] Returning cached usage data
+[2026-02-28 09:09:16.023] [Req:127.0.0.1:ebea8c74] [INFO] [Update] Fetching remote tags...
+[2026-02-28 09:09:18.444] [Req:127.0.0.1:ebea8c74] [INFO] [Update] Local version: 2.9.9, Latest version: v2.9.9, Has update: false, Method: git
+[2026-02-28 09:09:42.014] [Req:127.0.0.1:27d298f3] [INFO] [Usage API] Fetching fresh usage data
+[2026-02-28 09:09:42.651] [Req:127.0.0.1:27d298f3] [INFO] [Antigravity] Successfully fetched quotas for 5 models
+[2026-02-28 09:09:42.852] [Req:127.0.0.1:27d298f3] [INFO] [Gemini] Successfully fetched quotas for 5 models
+[2026-02-28 09:09:42.862] [Req:127.0.0.1:27d298f3] [INFO] [Usage Cache] Usage data cached to D:\DEV\demo\AIClient-2-API\configs\usage-cache.json
+[2026-02-28 09:10:02.264] [Req:127.0.0.1:7c677c11] [INFO] [Kiro Auth] Starting OAuth with method: builder-id
+[2026-02-28 09:10:02.266] [Req:127.0.0.1:7c677c11] [INFO] [Kiro Auth] Using Builder ID Start URL: https://view.awsapps.com/start
+[2026-02-28 09:10:03.497] [Req:127.0.0.1:7c677c11] [INFO] [Kiro Auth] 开始轮询令牌 [kiro-Nd1foD5Y-1772241003497]
+[2026-02-28 09:10:03.726] [Req:127.0.0.1:7c677c11] [INFO] [Kiro Auth] 等待用户授权 [kiro-Nd1foD5Y-1772241003497]... (1/60)
+[2026-02-28 09:10:20.068] [Req:127.0.0.1:83cd3cae] [INFO] [Kiro Auth] 成功获取令牌 [kiro-Nd1foD5Y-1772241003497]
+[2026-02-28 09:10:20.081] [Req:127.0.0.1:83cd3cae] [INFO] [Auto-Link] Successfully linked credential: configs\kiro\1772241020069_kiro-auth-token\1772241020069_kiro-auth-token.json to Claude Kiro OAuth
+[2026-02-28 09:10:20.085] [Req:127.0.0.1:83cd3cae] [INFO] [Auto-Link] Added 1 new config(s) to provider pools:
+[2026-02-28 09:10:20.087] [Req:127.0.0.1:83cd3cae] [INFO]   Claude Kiro OAuth: 1 config(s)
+[2026-02-28 09:10:20.088] [Req:127.0.0.1:83cd3cae] [INFO]     - .\configs\kiro\1772241020069_kiro-auth-token\1772241020069_kiro-auth-token.json
+[2026-02-28 09:10:20.089] [Req:127.0.0.1:83cd3cae] [INFO] [ProviderPoolManager] Initialized provider statuses: ok (maxErrorCount: 10)
