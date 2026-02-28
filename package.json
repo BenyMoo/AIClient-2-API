@@ -37,6 +37,11 @@
     "test:silent": "jest --silent",
     "test:unit": "node run-tests.js --unit",
     "test:integration": "node run-tests.js --integration",
-    "test:summary": "node test-summary.js"
+    "test:summary": "node test-summary.js",
+    "deploy:cf": "wrangler deploy",
+    "deploy:cf:dev": "wrangler deploy --env development",
+    "dev:cf": "wrangler dev",
+    "deploy:pages": "wrangler pages deploy static",
+    "pages:dev": "wrangler pages dev static"
   }
 }

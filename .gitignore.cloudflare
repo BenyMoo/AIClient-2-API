@@ -1,0 +1,12 @@
+# Cloudflare
+.wrangler/
+.dev.vars
+.env.local
+
+# Cloudflare Workers
+*.worker.js
+worker-configuration.d.ts
+
+# Cloudflare Pages
+.vercel/
+.netlify/

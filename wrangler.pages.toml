@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "static",
+      "use": "@cloudflare/pages-static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/v1/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/v1beta/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/ollama/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/health",
+      "dest": "/api/health"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/static/$1"
+    }
+  ]
+}
