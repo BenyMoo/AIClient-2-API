@@ -3,6 +3,7 @@
 <img src="src/img/logo-mid.webp" alt="logo"  style="width: 128px; height: 128px;margin-bottom: 3px;">
 
 # AIClient-2-API 🚀
+# 免费自建大模型api
 
 **一个能将多种仅客户端内使用的大模型 API（Gemini CLI, Antigravity, Qwen Code, Kiro ...），模拟请求，统一封装为本地 OpenAI 兼容接口的强大代理。**
 
